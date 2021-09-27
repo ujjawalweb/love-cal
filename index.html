@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center">
+        <div
+            class="login__card d-flex flex-direction-column justify-content-center align-items-center border-radius--lg" style="background:#fff;">
+            <h2 class="title margin-buttom" style="color:#fc8895;">Love Calculator</h2>
+            <div class="login__username d-flex align-items-center margin-buttom border-radius bg--white">
+                <span class="d-flex bg--primary border-radius--left">
+                    <i class="fa fa-user color--tertionary margin-auto"></i>
+                </span>
+                <span>
+                    <input class="color--tertionary border-radius" type="text" 
+                        placeholder="Your name" >
+                </span>
+            </div>
+
+            <div class="login__password d-flex align-items-center margin-buttom border-radius bg--white">
+                <span class="d-flex bg--primary border-radius--left">
+                    <i class="fa fa-lock color--tertionary margin-auto"></i>
+                </span>
+                <span>
+                    <input class="color--tertionary border-radius" type="text" 
+                        placeholder="Your Lover's name ">
+                </span>
+            </div>
+
+            <br>
+            <input class="login__btn border-radius bg--primary text-white margin-buttom-sm" type="submit" value="Submit" onclick="ujjawal()"
+                id="loginBtn">
+
+                <br>
+
+               <h4 id="ud" style="color:#fff;font-size: 23px;"></h4>
+
+            <div>
+            
+   
+            </div>
+        </div>
+
+
+
+
+
+<script>
+
+function ujjawal(){
+
+var love=Math.random()*100;
+
+love=Math.floor(love);
+
+document.getElementById("ud").innerHTML=love + "%";
+
+
+
+
+}
+
+</script>
+
+    
+</body>
+</html>
